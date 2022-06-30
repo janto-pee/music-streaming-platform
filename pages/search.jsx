@@ -13,6 +13,7 @@ import { fetchApi } from "../Utils/fetchApi";
 import Filter from "../Components/Filter";
 import header from "../assets/header5.jpg";
 import Image from "next/image";
+import Footer from "../Components/Footer";
 
 const Search = ({ searchKeys }) => {
   const [filterState, setFilterState] = useState(false);
@@ -70,6 +71,7 @@ const Search = ({ searchKeys }) => {
             </Flex>
           )}
         </Box>
+          <Footer mt={6} footerBg='gray.700' />
       </Box>
     </Box>
   );

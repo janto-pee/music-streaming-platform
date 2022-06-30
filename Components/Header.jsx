@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Heading, Select, Stack, Button, Flex } from "@chakra-ui/react";
-import header from "../assets/header1.jpg";
 import Navbar from "./Navbar";
 import Link from "next/link";
 import Filter from "./Filter";
@@ -8,19 +7,19 @@ import Filter from "./Filter";
 const Header = () => {
   return (
     <Box
-      background={header}
-      height={{ base: "75vh", md: "40rem", lg: "100vh" }}
+      height={["75vh", "40rem", "100vh" ]}
       className="hero"
-      position="relative"
     >
+      
+      <Box w={"90%"} mx={"auto"}><Navbar color={"gray.100"} /></Box>
       <Box w={"90%"} mx={"auto"}>
-        <Navbar color={"gray.200"} />
         <Box
+          textAlign='center'
           position="absolute"
           top="50%"
           left="50%"
           transform="translate(-50%, -50%)"
-          w="100%"
+          color='white'
         >
           <Heading
             textAlign="center"
@@ -46,7 +45,7 @@ const Header = () => {
             </Stack>
             <Filter
               simplified
-              direction={{ sm: "row", md: "row", lg: "row" }}
+              direction={{ sm: "column", md: "row", lg: "row" }}
               gap={2}
               spacing={3}
               border={5}

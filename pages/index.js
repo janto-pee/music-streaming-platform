@@ -1,20 +1,26 @@
 import { Box } from "@chakra-ui/react";
-import Header from "../Components/Header";
 import Properties from "../Components/Properties";
 import Location from "../Components/Location";
 import HomeForm from "../Components/HomeForm";
 import Footer from "../Components/Footer";
 import { baseUrl, fetchApi } from "../Utils/fetchApi";
 
+import dynamic from "next/dynamic";
+import Foot from "../Components/Foot";
+
+const NoSSRComponent = dynamic(() => import("../Components/Header"), {
+  ssr: false,
+});
+
 export default function Home({ rentList, saleList }) {
   return (
     <Box>
-      <Header />
+      <NoSSRComponent />
       <Properties item={saleList} purpose={"Sale"} />
       <Location />
       <Properties item={rentList} purpose={"Rent"} />
       <HomeForm />
-      <Footer />
+      <Footer footerBg='red.700' />
     </Box>
   );
 }
