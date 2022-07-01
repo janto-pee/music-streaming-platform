@@ -12,8 +12,8 @@ Every item is verified against relevant and common OWASP attacks.
 The code for an item is peer-reviewed by someone else in the team. Someone else in the team verified that the item worked as specified;
 The item is deployed to production.
 
-Initially, the app was to be built with Angular and material UI but Nextjs was preferred for its SEO functionality. High level overview; The frontend is being developed with Nextjs, Reactjs and Chakra UI for amazing styling and fast development. 
+The frontend is being developed with Nextjs, Reactjs and Chakra UI for amazing styling and fast development. 
 Each of the frontend was being sectioned into components (courtesy of React) and components were put together to form pages. With the beautify layout provided by Nextjs, I developed and integrated every elements (website logo, banner, slides, footers with quick links, property page, property listings and featured products.) in a short time.
 
-NOTE: This real estate project was deployed to netlify
+NOTE: This real estate project was deployed to vercel
 Also, You can read more about how i handled this project using the agile framework to fasciliate easy and smooth development to production.
