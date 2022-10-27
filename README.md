@@ -37,10 +37,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-![screenshot](../main/images/screenshot2.jpg)
-
 Think of an online marketplace for housing like airbnb, However Realance is an online marketplace that connects properties to potential buyers. Visitors and buyers can view hundreds of property listings with scrollable property images, videos, perimeter sizes and features before they ever need to schedule a live tour. All property features such as (bath, rooms, location, price, size and more) are displayed for each of the properties. In this React project, we'll be building a large-scale React.js application from scratch. you'll master the basics of Reactjs and proceed to more advanced concepts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
